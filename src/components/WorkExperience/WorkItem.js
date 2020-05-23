@@ -32,7 +32,7 @@ const WorkItem = ({
       {description ? (
         <div>
           <dt className="sr-only">Roles and responsibilites</dt>
-          <dd>{description}</dd>
+          <dd dangerouslySetInnerHTML={{ __html: description }} />
         </div>
       ) : null}
     </dl>
