@@ -9,6 +9,7 @@ const Education = () => {
     query SchoolsQuery {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/education/" } }
+        sort: { fields: frontmatter___sortOrder }
       ) {
         edges {
           node {
@@ -39,15 +40,18 @@ const Education = () => {
     <>
       <h2>Education</h2>
       <ul>
-        {schools.map(({ name, type, university, duration, description }) => (
-          <EducationItem
-            name={name}
-            type={type}
-            university={university}
-            duration={duration}
-            description={description}
-          />
-        ))}
+        {schools.map(
+          ({ id, name, type, university, duration, description }) => (
+            <EducationItem
+              key={id}
+              name={name}
+              type={type}
+              university={university}
+              duration={duration}
+              description={description}
+            />
+          )
+        )}
       </ul>
     </>
   );

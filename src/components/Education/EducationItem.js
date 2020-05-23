@@ -6,20 +6,20 @@ const EducationItem = ({ name, type, university, duration, description }) => {
       <h3>{name}</h3>
       <dl>
         <div>
-          <dt class="sr-only">Degree type</dt>
+          <dt className="sr-only">Degree type</dt>
           <dd>{type}</dd>
         </div>
         <div>
-          <dt class="sr-only">University</dt>
+          <dt className="sr-only">University</dt>
           <dd>{university}</dd>
         </div>
         <div>
-          <dt class="sr-only">Duration of studies</dt>
+          <dt className="sr-only">Duration of studies</dt>
           <dd>{duration}</dd>
         </div>
         {description ? (
           <div>
-            <dt class="sr-only">Description</dt>
+            <dt className="sr-only">Description</dt>
             <dd>
               Not finished due to a rather stark career change. I have, however,
               completed 40 credits towards an MA in English Language and

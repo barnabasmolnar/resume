@@ -7,7 +7,10 @@ const WorkExperience = () => {
     allMarkdownRemark: { edges },
   } = useStaticQuery(graphql`
     query JobsQuery {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/jobs/" } }) {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/jobs/" } }
+        sort: { fields: frontmatter___sortOrder }
+      ) {
         edges {
           node {
             id
@@ -37,7 +40,7 @@ const WorkExperience = () => {
 
   return (
     <>
-      <h2>Work experience</h2>
+      <h2 className="text-4xl font-bold">Work experience</h2>
       <ul>
         {jobs.map(
           ({
