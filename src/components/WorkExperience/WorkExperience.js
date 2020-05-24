@@ -28,15 +28,13 @@ const WorkExperience = () => {
     }
   `);
 
-  const jobs = edges.map(({ node }) => ({
-    id: node.id,
-    title: node.frontmatter.title,
-    isFullTime: node.frontmatter.isFullTime,
-    company: node.frontmatter.company,
-    place: node.frontmatter.place,
-    duration: node.frontmatter.duration,
-    description: node.html,
-  }));
+  const jobs = edges.map(
+    ({ node: { id, html: description, frontmatter } }) => ({
+      id,
+      description,
+      ...frontmatter,
+    })
+  );
 
   return (
     <>
@@ -47,27 +45,9 @@ const WorkExperience = () => {
         <div className="absolute z-0 w-full h-3 bg-purple-200 opacity-50 bottom-3"></div>
       </div>
       <ul>
-        {jobs.map(
-          ({
-            id,
-            title,
-            isFullTime,
-            company,
-            place,
-            duration,
-            description,
-          }) => (
-            <WorkItem
-              key={id}
-              title={title}
-              isFullTime={isFullTime}
-              company={company}
-              place={place}
-              duration={duration}
-              description={description}
-            />
-          )
-        )}
+        {jobs.map(job => (
+          <WorkItem key={job.id} {...job} />
+        ))}
       </ul>
     </>
   );

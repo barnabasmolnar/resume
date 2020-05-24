@@ -27,14 +27,13 @@ const Education = () => {
     }
   `);
 
-  const schools = edges.map(({ node }) => ({
-    id: node.id,
-    name: node.frontmatter.name,
-    type: node.frontmatter.type,
-    university: node.frontmatter.university,
-    duration: node.frontmatter.duration,
-    description: node.html,
-  }));
+  const schools = edges.map(
+    ({ node: { id, html: description, frontmatter } }) => ({
+      id,
+      description,
+      ...frontmatter,
+    })
+  );
 
   return (
     <>
@@ -45,18 +44,9 @@ const Education = () => {
         <div className="absolute z-0 w-full h-3 bg-purple-200 opacity-50 bottom-3"></div>
       </div>
       <ul>
-        {schools.map(
-          ({ id, name, type, university, duration, description }) => (
-            <EducationItem
-              key={id}
-              name={name}
-              type={type}
-              university={university}
-              duration={duration}
-              description={description}
-            />
-          )
-        )}
+        {schools.map(school => (
+          <EducationItem key={school.id} {...school} />
+        ))}
       </ul>
     </>
   );
