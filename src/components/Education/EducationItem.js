@@ -4,9 +4,9 @@ import { CalendarIcon, SchoolIcon } from "../../images/SvgIcons";
 const EducationItem = ({ name, type, university, duration, description }) => {
   return (
     <li className="pb-8 mb-8 border-b">
-      <div className="items-center justify-between mb-1 sm:flex">
-        <h3 className="text-3xl">{name}</h3>
-        <dl className="inline-block mb-3 rounded sm:px-3 sm:py-1 sm:font-semibold sm:mb-0 sm:text-gray-800 sm:bg-gray-200">
+      <div className="items-center justify-between mb-4 sm:flex">
+        <h3 className="font-bold tracking-wider uppercase">{name}</h3>
+        <dl className="inline-block mb-3 rounded sm:px-3 sm:py-1 sm:font-semibold sm:mb-0 sm:text-gray-800 sm:bg-gray-200 sm:text-sm">
           <dt className="sr-only">Degree type</dt>
           <dd>{type}</dd>
         </dl>

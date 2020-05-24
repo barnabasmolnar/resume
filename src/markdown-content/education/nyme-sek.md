@@ -1,5 +1,5 @@
 ---
-name: "Philologist in English and American Studies specialising in English"
+name: "Philologist in English and American Studies"
 type: "Bachelor's"
 university: "University of West Hungary"
 duration: "2009-2012"

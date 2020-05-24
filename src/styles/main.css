@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-body;
+  @apply text-gray-700;
+}
+
+p {
+  @apply text-justify;
+  hyphens: auto;
+}

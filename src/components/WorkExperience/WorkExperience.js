@@ -40,7 +40,12 @@ const WorkExperience = () => {
 
   return (
     <>
-      <h2 className="text-4xl font-bold">Work experience</h2>
+      <div className="relative inline-block">
+        <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700">
+          Work experience
+        </h2>
+        <div className="absolute z-0 w-full h-3 bg-purple-200 opacity-50 bottom-3"></div>
+      </div>
       <ul>
         {jobs.map(
           ({

@@ -6,6 +6,7 @@ import {
   GithubIcon,
 } from "../../images/SvgIcons";
 import profilePic from "../../images/barna_molnar.jpg";
+import { DotBg } from "../../images/SvgBg";
 
 const InfoCard = () => (
   <>
@@ -13,8 +14,12 @@ const InfoCard = () => (
       <div className="w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full shadow-xl">
         <img src={profilePic} alt="Barnabás Molnár" />
       </div>
-      <h1 className="text-4xl font-bold leading-10">Barnabás Molnár</h1>
-      <p className="text-2xl text-gray-700">Full-stack developer</p>
+      <h1 className="text-3xl font-bold leading-10 text-indigo-900">
+        Barnabás Molnár
+      </h1>
+      <p className="font-bold tracking-wider text-center text-gray-800 uppercase">
+        Full-stack developer
+      </p>
     </div>
     <dl>
       <div>
@@ -59,6 +64,7 @@ const InfoCard = () => (
         </div>
       </div>
     </dl>
+    <DotBg className="hidden w-40 h-40 mt-8 ml-auto text-indigo-300 transform rotate-180 fill-current lg:block" />
   </>
 );
 
