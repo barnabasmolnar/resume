@@ -6,6 +6,9 @@ module.exports = {
         center: true,
         padding: "1rem",
       },
+      inset: {
+        "4": "1rem",
+      },
     },
   },
   variants: {},
