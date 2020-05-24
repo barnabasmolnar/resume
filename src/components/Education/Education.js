@@ -38,7 +38,7 @@ const Education = () => {
 
   return (
     <>
-      <h2>Education</h2>
+      <h2 className="text-4xl font-bold">Education</h2>
       <ul>
         {schools.map(
           ({ id, name, type, university, duration, description }) => (

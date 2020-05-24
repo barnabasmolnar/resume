@@ -42,3 +42,17 @@ export const CalendarIcon = props => (
     <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
   </svg>
 );
+
+export const SchoolIcon = props => (
+  <svg
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokewidth="2"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+  </svg>
+);

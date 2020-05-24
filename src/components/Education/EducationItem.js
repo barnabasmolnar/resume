@@ -1,24 +1,31 @@
 import React from "react";
+import { CalendarIcon, SchoolIcon } from "../../images/SvgIcons";
 
 const EducationItem = ({ name, type, university, duration, description }) => {
   return (
-    <li>
-      <h3>{name}</h3>
-      <dl>
-        <div>
+    <li className="pb-8 mb-8 border-b">
+      <div className="items-center justify-between mb-1 sm:flex">
+        <h3 className="text-3xl">{name}</h3>
+        <dl className="inline-block mb-3 rounded sm:px-3 sm:py-1 sm:font-semibold sm:mb-0 sm:text-gray-800 sm:bg-gray-200">
           <dt className="sr-only">Degree type</dt>
           <dd>{type}</dd>
-        </div>
-        <div>
+        </dl>
+      </div>
+      <dl className="grid-cols-2 row-gap-4 text-gray-700 sm:grid">
+        <div className="inline-flex items-center">
           <dt className="sr-only">University</dt>
+          <SchoolIcon className="w-4 h-4 mr-1" />
           <dd>{university}</dd>
         </div>
-        <div>
-          <dt className="sr-only">Duration of studies</dt>
-          <dd>{duration}</dd>
+        <div className="sm:text-right">
+          <div className="inline-flex items-center">
+            <dt className="sr-only">Duration of studies</dt>
+            <CalendarIcon className="w-4 h-4 mr-1" />
+            <dd>{duration}</dd>
+          </div>
         </div>
         {description ? (
-          <div>
+          <div className="col-span-3 mt-3 sm:mt-0">
             <dt className="sr-only">Description</dt>
             <dd>
               Not finished due to a rather stark career change. I have, however,
