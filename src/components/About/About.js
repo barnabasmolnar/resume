@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => (
   <>
-    <h2>About</h2>
+    <h2 className="text-4xl font-bold">About</h2>
     <p>
       I am a full-stack JavaScript developer, currently specialising in
       frontend, client side solutions. My preferred stack is MERN, though I am
