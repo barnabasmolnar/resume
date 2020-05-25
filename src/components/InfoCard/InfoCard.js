@@ -64,7 +64,7 @@ const InfoCard = () => (
         </div>
       </div>
     </dl>
-    <DotBg className="hidden w-40 h-40 mt-8 ml-auto text-indigo-300 transform rotate-180 fill-current lg:block" />
+    <DotBg className="hidden w-40 h-40 mt-12 ml-auto text-indigo-300 transform rotate-180 fill-current lg:block" />
   </>
 );
 
