@@ -1,14 +1,15 @@
-import React from "react"
+import React from "react";
+import { Svg404 } from "../images/Svg404";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const Page404 = () => (
+  <div className="flex items-center justify-center w-screen h-screen">
+    <div className="block text-center">
+      <Svg404 className="block w-64 h-64" />
+      <h1 className="text-3xl font-bold tracking-wider text-indigo-700 uppercase">
+        Page not found
+      </h1>
+    </div>
+  </div>
+);
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
-
-export default NotFoundPage
+export default Page404;

@@ -1,21 +1,45 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import React from "react";
+import "../styles/main.css";
+import InfoCard from "../components/InfoCard/InfoCard";
+import About from "../components/About/About";
+import WorkExperience from "../components/WorkExperience/WorkExperience";
+import Education from "../components/Education/Education";
+import Skills from "../components/Skills/Skills";
+import "typeface-source-sans-pro";
+import { Helmet } from "react-helmet";
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <>
+    <Helmet>
+      <html lang="en" />
+      <title>Barnabás Molnár</title>
+      <meta
+        name="description"
+        content="The resume of Barnabás Molnár, full-stack JavaScript developer"
+      />
+    </Helmet>
+    <div className="border-t-8 border-indigo-800">
+      <div className="container pt-16 xl:px-16">
+        <div className="lg:-mx-4 xl:-mx-8 lg:flex">
+          <div className="self-start mb-20 lg:sticky top-4 lg:w-1/4 lg:px-4 xl:px-8 lg:mb-0">
+            <InfoCard />
+          </div>
+          <div className="lg:w-3/4 lg:px-4 xl:px-8">
+            <article className="mb-20">
+              <About />
+            </article>
+            <article className="mb-20">
+              <WorkExperience />
+            </article>
+            <article className="mb-20">
+              <Skills />
+            </article>
+            <Education />
+          </div>
+        </div>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+  </>
+);
 
-export default IndexPage
+export default IndexPage;
