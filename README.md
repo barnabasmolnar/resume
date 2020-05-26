@@ -1,3 +1,15 @@
+# Resume
+
+A simple, minimalist resume made with [Gatsby](https://www.gatsbyjs.org/) & [Tailwind](https://tailwindcss.com/), deployed on [Netlify](https://www.netlify.com/).
+
+The live site can be viewed [here](https://barnabas-molnar.netlify.app/).
+
+To run or build the project locally, refer to the Gatsby docs below.
+
+The icons used are mainly from [Steve Schoger](https://twitter.com/steveschoger)'s [free heroicons](https://github.com/refactoringui/heroicons) icon set.
+
+---
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
