@@ -1,7 +1,15 @@
 import React from "react";
 import { CheckmarkIcon } from "../../images/SvgIcons";
 
-const skills = ["JavaScript", "React", "Node", "MongoDB", "Docker", "CI/CD"];
+const skills = [
+  "JavaScript",
+  "React",
+  "Node",
+  "MongoDB",
+  "Docker",
+  "CI/CD",
+  "Documentation",
+];
 
 const SkillItem = ({ name }) => (
   <li className="flex items-center">

@@ -57,7 +57,10 @@ const WorkItem = ({
       {description ? (
         <div className="col-span-3 mt-3 sm:mt-0">
           <dt className="sr-only">Roles and responsibilites</dt>
-          <dd dangerouslySetInnerHTML={{ __html: description }} />
+          <dd
+            className="work-description"
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
         </div>
       ) : null}
     </dl>

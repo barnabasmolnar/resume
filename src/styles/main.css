@@ -11,3 +11,7 @@ p {
   @apply text-justify;
   hyphens: auto;
 }
+
+.work-description ul {
+  @apply ml-5 list-disc list-outside;
+}
