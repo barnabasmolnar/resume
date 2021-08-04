@@ -32,7 +32,7 @@ const WorkItem = ({
         </dd>
       </dl>
     </div>
-    <dl className="grid-cols-3 row-gap-4 sm:grid">
+    <dl className="grid-cols-3 gap-y-4 sm:grid">
       <div>
         <div className="inline-flex items-center">
           <dt className="sr-only">Company name</dt>

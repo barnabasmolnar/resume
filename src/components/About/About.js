@@ -1,4 +1,5 @@
 import React from "react";
+import FancyUnderline from "../FancyUnderline";
 
 const About = () => (
   <>
@@ -6,7 +7,7 @@ const About = () => (
       <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700">
         About
       </h2>
-      <div className="absolute z-0 w-full h-3 bg-purple-200 opacity-50 bottom-3"></div>
+      <FancyUnderline />
     </div>
     <p>
       Full-stack JavaScript engineer currently specialising in frontend,

@@ -19,7 +19,7 @@ const IndexPage = () => (
       />
     </Helmet>
     <div className="border-t-8 border-indigo-800">
-      <div className="container pt-16 xl:px-16">
+      <div className="max-w-screen-xl px-4 pt-16 mx-auto xl:px-16">
         <div className="lg:-mx-4 xl:-mx-8 lg:flex">
           <div className="self-start mb-20 lg:sticky top-4 lg:w-1/4 lg:px-4 xl:px-8 lg:mb-0">
             <InfoCard />

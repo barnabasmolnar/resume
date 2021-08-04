@@ -11,7 +11,7 @@ const EducationItem = ({ name, type, university, duration, description }) => {
           <dd>{type}</dd>
         </dl>
       </div>
-      <dl className="grid-cols-2 row-gap-4 text-gray-700 sm:grid">
+      <dl className="grid-cols-2 gap-y-4 text-gray-700 sm:grid">
         <div className="inline-flex items-center">
           <dt className="sr-only">University</dt>
           <SchoolIcon className="w-4 h-4 mr-1" />

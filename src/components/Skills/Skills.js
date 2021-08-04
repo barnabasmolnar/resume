@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckmarkIcon } from "../../images/SvgIcons";
+import FancyUnderline from "../FancyUnderline";
 
 const skills = [
   "JavaScript",
@@ -23,7 +24,7 @@ const Skills = () => (
       <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700">
         Professional skills
       </h2>
-      <div className="absolute z-0 w-full h-3 bg-purple-200 opacity-50 bottom-3"></div>
+      <FancyUnderline />
     </div>
     <ul>
       {skills.map(skill => (
