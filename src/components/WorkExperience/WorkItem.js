@@ -23,7 +23,8 @@ const WorkItem = ({
           className={classnames(
             "sm:text-sm sm:px-3 sm:py-1 sm:font-semibold rounded inline-block mb-3 sm:mb-0",
             {
-              "sm:text-green-800 sm:bg-green-200": isFullTime,
+              "sm:text-green-800 sm:bg-green-200 sm:dark:text-rose-900 sm:dark:bg-rose-200":
+                isFullTime,
               "sm:text-gray-800 sm:bg-gray-200": !isFullTime,
             }
           )}

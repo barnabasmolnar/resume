@@ -4,7 +4,7 @@ import FancyUnderline from "../FancyUnderline";
 const About = () => (
   <>
     <div className="relative inline-block">
-      <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700">
+      <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700 dark:text-white">
         About
       </h2>
       <FancyUnderline />
@@ -18,7 +18,7 @@ const About = () => (
         href="https://github.com/barnabasmolnar"
         target="_blank"
         rel="noopener noreferrer"
-        className="font-bold text-indigo-700 underline"
+        className="font-bold text-indigo-700 underline dark:text-rose-300"
       >
         Occasional open sourcerer
       </a>{" "}
@@ -27,7 +27,7 @@ const About = () => (
         href="https://barna-molnar.medium.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="font-bold text-indigo-700 underline"
+        className="font-bold text-indigo-700 underline dark:text-rose-300"
       >
         writer
       </a>

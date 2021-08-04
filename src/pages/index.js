@@ -11,14 +11,14 @@ import { Helmet } from "react-helmet";
 const IndexPage = () => (
   <>
     <Helmet>
-      <html lang="en" />
+      <html lang="en" className="dark" />
       <title>Barnabás Molnár</title>
       <meta
         name="description"
         content="The resume of Barnabás Molnár, full-stack JavaScript developer"
       />
     </Helmet>
-    <div className="border-t-8 border-indigo-800">
+    <div className="border-t-8 border-indigo-800 dark:border-rose-400">
       <div className="max-w-screen-xl px-4 pt-16 mx-auto xl:px-16">
         <div className="lg:-mx-4 xl:-mx-8 lg:flex">
           <div className="self-start mb-20 lg:sticky top-4 lg:w-1/4 lg:px-4 xl:px-8 lg:mb-0">

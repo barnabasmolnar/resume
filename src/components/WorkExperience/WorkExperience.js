@@ -40,7 +40,7 @@ const WorkExperience = () => {
   return (
     <>
       <div className="relative inline-block">
-        <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700">
+        <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700 dark:text-white">
           Work experience
         </h2>
         <FancyUnderline />

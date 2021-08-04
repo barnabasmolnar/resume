@@ -1,5 +1,8 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   mode: "jit",
+  darkMode: "class",
   purge: [
     "./src/**/*.html",
     "./src/**/*.js",
@@ -11,6 +14,9 @@ module.exports = {
     extend: {
       fontFamily: {
         body: ["Source Sans Pro", "sans-serif"],
+      },
+      colors: {
+        rose: colors.rose,
       },
     },
   },

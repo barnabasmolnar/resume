@@ -14,10 +14,10 @@ const InfoCard = () => (
       <div className="w-40 h-40 mx-auto mb-4 overflow-hidden rounded-full shadow-xl">
         <img src={profilePic} alt="Barnabás Molnár" />
       </div>
-      <h1 className="text-3xl font-bold leading-10 text-indigo-900">
+      <h1 className="text-3xl font-bold leading-10 text-indigo-900 dark:text-white">
         Barnabás Molnár
       </h1>
-      <p className="font-bold tracking-wider text-center text-gray-800 uppercase">
+      <p className="font-bold tracking-wider text-center text-gray-800 uppercase dark:text-gray-50">
         Full-stack developer
       </p>
     </div>
@@ -36,7 +36,7 @@ const InfoCard = () => (
       <div>
         <dt className="sr-only">LinkedIn profile</dt>
         <div className="flex items-center pb-2 mb-2 border-b">
-          <LinkedInIcon className="w-4 h-4 mr-3" />
+          <LinkedInIcon className="w-4 h-4 mr-3 fill-current" />
           <dd>
             <a
               href="https://www.linkedin.com/in/barnab%C3%A1s-moln%C3%A1r-773232191/"
@@ -51,7 +51,7 @@ const InfoCard = () => (
       <div>
         <dt className="sr-only">Github profile</dt>
         <div className="flex items-center pb-2 mb-2 border-b">
-          <GithubIcon className="w-4 h-4 mr-3" />
+          <GithubIcon className="w-4 h-4 mr-3 fill-current" />
           <dd>
             <a
               href="https://github.com/barnabasmolnar"
@@ -64,7 +64,7 @@ const InfoCard = () => (
         </div>
       </div>
     </dl>
-    <DotBg className="hidden w-40 h-40 mt-12 ml-auto text-indigo-300 transform rotate-180 fill-current lg:block" />
+    <DotBg className="hidden w-40 h-40 mt-12 ml-auto text-indigo-300 transform rotate-180 fill-current dark:text-rose-300 lg:block" />
   </>
 );
 

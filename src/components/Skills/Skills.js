@@ -14,14 +14,15 @@ const skills = [
 
 const SkillItem = ({ name }) => (
   <li className="flex items-center">
-    <CheckmarkIcon className="w-4 h-4 mr-1 text-indigo-500" /> {name}
+    <CheckmarkIcon className="w-4 h-4 mr-1 text-indigo-500 dark:text-rose-400" />{" "}
+    {name}
   </li>
 );
 
 const Skills = () => (
   <>
     <div className="relative inline-block">
-      <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700">
+      <h2 className="relative z-10 mb-2 text-3xl font-bold text-indigo-700 dark:text-white">
         Professional skills
       </h2>
       <FancyUnderline />
