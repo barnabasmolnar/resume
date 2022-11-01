@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon";
+
+interface Props {
+  title: string;
+  icon: string;
+}
+
+const { icon, title } = Astro.props;
+---
+
+<div
+  class="inline-flex items-center bg-sundance-50/20 border border-sundance-100 text-sm rounded-sm"
+>
+  <div class="bg-sundance-50 py-1.5 px-2.5">
+    <Icon
+      pack="heroicons-outline"
+      name={icon}
+      class="w-4 h-4 text-sundance-700"
+      stroke-width="1.5"
+      stroke="currentColor"
+    />
+  </div>
+  <div class="px-2.5">{title}</div>
+</div>

@@ -1,0 +1,14 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import { sortBy } from "lodash-es";
+
+const edu = await Astro.glob("../content/education/*.md");
+const sortedEdu = sortBy(edu, "frontmatter.sortOrder");
+---
+
+<article>
+  <SectionHeader>Education</SectionHeader>
+  <div class="divide-y divide-mirage/10 -mt-8">
+    {sortedEdu.map(({ Content }) => <Content />)}
+  </div>
+</article>

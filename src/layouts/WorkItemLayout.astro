@@ -1,0 +1,37 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import MetaInfoBadge from "../components/MetaInfoBadge.astro";
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  isFullTime: boolean;
+  company: string;
+  place: string;
+  duration: string;
+}>;
+
+const { frontmatter } = Astro.props;
+---
+
+<div class="py-8 space-y-2">
+  <div class="sm:flex justify-between items-center">
+    <h3 class="font-bold tracking-wider uppercase text-sundance-900">
+      {frontmatter.title}
+    </h3>
+    <div
+      class={`shrink-0 text-sm sm:text-xs sm:px-3 py-1.5 font-semibold rounded sm:inline-block ${
+        frontmatter.isFullTime
+          ? "text-sundance-800 sm:bg-sundance-200"
+          : "sm:bg-sundance-50 text-sundance-700"
+      }`}
+    >
+      {frontmatter.isFullTime ? "Full Time" : "Part Time"}
+    </div>
+  </div>
+  <div class="flex flex-wrap gap-2 sm:gap-x-4">
+    <MetaInfoBadge icon="office-building" title={frontmatter.company} />
+    <MetaInfoBadge icon="location-marker" title={frontmatter.place} />
+    <MetaInfoBadge icon="calendar" title={frontmatter.duration} />
+  </div>
+  <slot />
+</div>
