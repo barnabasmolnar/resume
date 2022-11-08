@@ -40,13 +40,17 @@ import "@fontsource/nunito/800.css";
       }
 
       .markdown-content ul {
-        @apply ml-5 space-y-1;
+        @apply space-y-1 list-outside list-disc ml-5;
       }
 
-      .markdown-content ul li::before {
+      .markdown-content ul li::marker {
+        @apply text-sundance/75;
+      }
+
+      /* .markdown-content ul li::before {
         content: "\25AA";
         @apply text-sundance/50 w-5 -ml-5 font-bold inline-block text-3xl leading-[0] align-middle;
-      }
+      } */
     </style>
   </body>
 </html>
