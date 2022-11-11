@@ -1,0 +1,24 @@
+---
+import About from "../components/About.astro";
+import Education from "../components/Education.astro";
+import Header from "../components/Header.astro";
+import Skills from "../components/Skills.astro";
+import Work from "../components/Work.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Barnabás Molnár">
+  <Header />
+  <main>
+    <div
+      class="max-w-container mx-auto sm:my-20 border-2 border-sundance-100 p-4 xs:p-8 sm:py-12 sm:px-14 md:py-16 md:px-20 shadow-lg shadow-sundance-200 bg-[#fdfbf6]"
+    >
+      <div class="space-y-20">
+        <About />
+        <Skills />
+        <Work />
+        <Education />
+      </div>
+    </div>
+  </main>
+</Layout>
