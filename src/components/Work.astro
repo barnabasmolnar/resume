@@ -1,0 +1,14 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import { sortBy } from "lodash-es";
+
+const jobs = await Astro.glob("../content/work/*.md");
+const sortedJobs = sortBy(jobs, "frontmatter.sortOrder");
+---
+
+<article class="markdown-content">
+  <SectionHeader>Work experience</SectionHeader>
+  <div class="divide-y divide-mirage/10 -mt-8">
+    {sortedJobs.map(({ Content }) => <Content />)}
+  </div>
+</article>

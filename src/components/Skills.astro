@@ -1,0 +1,36 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import { Icon } from "astro-icon";
+
+const skills = [
+  "JavaScript/TypeScript",
+  "React",
+  "Tailwindcss, Sass",
+  "Node, Deno",
+  "MongoDB, Postgres",
+  "Firebase",
+  "Docker",
+  "CI/CD",
+  "Documentation",
+];
+---
+
+<article>
+  <SectionHeader>Professional skills</SectionHeader>
+  <ul class="ml-0 columns-1 xs:columns-2 md:columns-3">
+    {
+      skills.map((skill) => (
+        <li class="flex items-center gap-x-2">
+          <Icon
+            pack="heroicons-outline"
+            name="badge-check"
+            class="w-4 h-4 text-sundance-700 shrink-0"
+            stroke-width="1.5"
+            stroke="currentColor"
+          />
+          {skill}
+        </li>
+      ))
+    }
+  </ul>
+</article>
